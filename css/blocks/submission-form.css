@@ -1,0 +1,89 @@
+.submission-form {
+  margin-bottom: -90px;
+  z-index: 2;
+  position: relative;
+}
+.submission-form__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: clamp(1.5rem, 0.464rem + 4.42vw, 4rem);
+  padding-block: clamp(2rem, 1.715rem + 1.22vw, 2.688rem);
+  background-color: var(--second-color);
+  border-radius: 20px;
+  align-items: center;
+  gap: 32px;
+}
+@media (width <= 765px) {
+  .submission-form__wrapper {
+    flex-direction: column;
+  }
+}
+.submission-form__title {
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: clamp(1.875rem, 1.616rem + 1.1vw, 2.5rem);
+  line-height: 113%;
+  color: var(--main-color);
+  max-width: 689px;
+}
+.submission-form__input {
+  border-radius: 62px;
+  padding: 12px 16px;
+  padding-left: clamp(3rem, 2.896rem + 0.44vw, 3.25rem);
+  width: clamp(19.438rem, 18.453rem + 4.2vw, 21.813rem);
+  height: clamp(2.625rem, 2.47rem + 0.66vw, 3rem);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.submission-form__container-form-cont {
+  position: relative;
+}
+.submission-form__container-form-cont::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 20%;
+  left: 16px;
+  background-image: url(../../icons/letter.svg);
+}
+.submission-form__container-form {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.75rem, 0.698rem + 0.22vw, 0.875rem);
+}
+.submission-form__btn {
+  border-radius: 62px;
+  padding: 12px 16px;
+  width: clamp(19.438rem, 18.453rem + 4.2vw, 21.813rem);
+  height: clamp(2.625rem, 2.47rem + 0.66vw, 3rem);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--second-color);
+  background: var(--main-color);
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:
+    color var(--transition-time),
+    background-color var(--transition-time),
+    border-color var(--transition-time);
+}
+.reviews__container-title {
+  line-height: 1;
+  margin-bottom: 0;
+}
+.reviews__container-text {
+  margin-bottom: clamp(1.5rem, 1.086rem + 1.77vw, 2.5rem);
+}
+@media (any-hover: hover) {
+  .submission-form__btn:hover {
+    color: var(--main-color);
+    background-color: var(--second-color);
+    border-color: var(--main-color);
+  }
+}

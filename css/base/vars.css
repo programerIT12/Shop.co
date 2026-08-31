@@ -1,0 +1,25 @@
+:root {
+  /* font-family */
+  --font-family: "Satoshi", sans-serif;
+  --second-family: "Integral CF", sans-serif;
+
+  /* colors */
+  --bg-color: #f0eeed;
+  --bg-color-hero: #f2f0f1;
+  --bg-color-soft: #f0f0f0;
+  --main-color: #fff;
+  --second-color: #000;
+  --accent-color: #ff3333;
+
+  /* derived colors */
+  --text-muted: rgba(0, 0, 0, 0.6);
+  --text-gray: #6d6d6d;
+  --border-color: rgba(0, 0, 0, 0.1);
+
+  /* container */
+  --container-width: 1240px;
+  --container-padding: 15px;
+
+  /* transition */
+  --transition-time: 0.4s;
+}

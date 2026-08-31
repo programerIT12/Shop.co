@@ -1,0 +1,2512 @@
+<!doctype html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SHOP.CO — магазин одежды. Найди вещи, которые выразят твой стиль: новые поступления, лидеры продаж и скидки."
+    />
+    <title>SHOP.CO</title>
+    <link
+      rel="shortcut icon"
+      href="./icons/apple-touch-icon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
+    ></script>
+    <script type="module" src="./js/fslightbox.js"></script>
+    <script type="module" src="./js/index.js"></script>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__advertising-background">
+        <div class="container header__advertising-massage">
+          <span class="header__advertising-title">
+            Зарегистрируйтесь и получите скидку 20% на первую покупку. </span
+          ><a href="#" class="header__advertising-registration"
+            >Зарегистрироваться сейчас</a
+          >
+          <button
+            class="header__advertising-massage-cross"
+            type="button"
+            aria-label="Закрыть баннер"
+            title="Закрыть баннер"
+          >
+            <svg class="modal__close-icon">
+              <use
+                class="header__advertising-massage-icon"
+                href="./icons/cross.svg"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <nav
+          class="header__menu"
+          aria-label="Основная навигация"
+          title="Основная навигация"
+        >
+          <div class="header__menu-logo">
+            <button
+              class="header__burger burger"
+              type="button"
+              aria-label="Открыть меню"
+              title="Открыть меню"
+              aria-expanded="false"
+              aria-controls="header__menu-list"
+            >
+              <svg width="24px" height="24px" aria-hidden="true">
+                <use
+                  class="burger__icon-menu"
+                  href="./icons/sprite.svg#burger-menu"
+                ></use>
+                <use
+                  class="burger__icon-cross"
+                  href="./icons/sprite.svg#burger-cross"
+                ></use>
+              </svg>
+            </button>
+            <a class="header__menu-name" href="#hero">SHOP.CO</a>
+          </div>
+          <ul class="header__menu-list" id="header__menu-list">
+            <li class="header__menu-item">
+              <a
+                class="header__menu-item-link header__menu-item-link-mark"
+                href="#new-arrivals"
+                >Магазин</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-item-link" href="#best-sellers">Скидки</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-item-link" href="#new-arrivals"
+                >Новые поступления</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-item-link" href="#dress-style">Бренды</a>
+            </li>
+          </ul>
+          <form class="header__menu-form">
+            <label class="header__menu-form-label"
+              ><input
+                class="header__menu-form-input"
+                type="search"
+                name="search"
+                placeholder="Искать товары..."
+                aria-label="Искать товары"
+            /></label>
+          </form>
+          <div class="header__menu-icon">
+            <svg
+              class="header__menu-icon-search header__menu-icon--item"
+              width="24"
+              height="24"
+              role="img"
+              aria-label="Поиск по товарам"
+              title="Поиск по товарам"
+            >
+              <use href="./icons/sprite.svg#search"></use>
+            </svg>
+            <button
+              class="header__menu-basket"
+              type="button"
+              aria-label="Открыть корзину"
+            >
+              <svg
+                class="header__menu-icon--item"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./icons/sprite.svg#card"></use>
+              </svg>
+            </button>
+            <svg
+              class="header__menu-icon--item"
+              width="24"
+              height="24"
+              role="img"
+              aria-label="Личный кабинет"
+              title="Личный кабинет"
+            >
+              <use href="./icons/sprite.svg#account"></use>
+            </svg>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section id="hero" class="hero">
+        <div class="container hero__wrapper">
+          <div class="hero__text-info">
+            <h1 class="hero__title title-xxl">
+              НАЙДИ ОДЕЖДУ КОТОРАЯ ВЫРАЗИТ ТВОЙ СТИЛЬ
+            </h1>
+            <p class="hero__text title-xs">
+              Просмотрите наш набор тщательно сделанной одежды, созданный чтобы
+              подчеркнуть ваш индивидуальный стиль.
+            </p>
+            <button class="hero__btn-buy" type="button">Купить сейчас</button>
+            <div class="hero__list-avards">
+              <div class="hero__list-avards-item">
+                <p class="title-xl hero__list-avards-item-text">200+</p>
+                <p class="title-xss">Всемирных брендов</p>
+              </div>
+              <div
+                class="hero__list-avards-item hero__list-avards-item--border"
+              >
+                <p class="title-xl hero__list-avards-item-text">2,000+</p>
+                <p class="title-xss">Качественных товаров</p>
+              </div>
+              <div class="hero__list-avards-item">
+                <p class="title-xl hero__list-avards-item-text">30,000+</p>
+                <p class="title-xss">Счастливых клиентов</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero__img">
+            <img
+              class="hero__img-picture"
+              src="./img/hero__img.png"
+              alt="Модели в стильной одежде из коллекции SHOP.CO"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+        <div class="hero__brands" id="brands">
+          <div class="container hero__brands-wrapper">
+            <svg
+              class="hero__brands-img"
+              width="166"
+              height="34"
+              role="img"
+              aria-label="Versace"
+              title="Versace"
+            >
+              <use href="./icons/sprite__banner.svg#versach"></use>
+            </svg>
+            <svg
+              class="hero__brands-img"
+              width="91"
+              height="38"
+              role="img"
+              aria-label="Zara"
+              title="Zara"
+            >
+              <use href="./icons/sprite__banner.svg#zara"></use>
+            </svg>
+            <svg
+              class="hero__brands-img"
+              width="156"
+              height="36"
+              role="img"
+              aria-label="Gucci"
+              title="Gucci"
+            >
+              <use href="./icons/sprite__banner.svg#cucci"></use>
+            </svg>
+            <svg
+              class="hero__brands-img"
+              width="194"
+              height="32"
+              role="img"
+              aria-label="Prada"
+              title="Prada"
+            >
+              <use href="./icons/sprite__banner.svg#prada"></use>
+            </svg>
+            <svg
+              class="hero__brands-img"
+              width="207"
+              height="34"
+              role="img"
+              aria-label="Calvin Klein"
+              title="Calvin Klein"
+            >
+              <use href="./icons/sprite__banner.svg#calvinklein"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="brand" id="new-arrivals">
+        <div class="container brand-container">
+          <h2 class="brand__title">НОВЫЕ ПОСТУПЛЕНИЯ</h2>
+          <div class="brand__wrapper">
+            <div class="brand__cards" data-id="1">
+              <div class="brand__cards-wrapper">
+                <div class="brand__cards-header">
+                  <img
+                    class="brand__cards-img"
+                    src="./img/brand__card-img1.png"
+                    alt="Футболка с лентой"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="brand__cards-footer">
+                  <h3 class="brand__cards-footer-title card-title">
+                    Футболка с лентой
+                  </h3>
+                  <div class="brand__cards-footer-rate">
+                    <div
+                      class="brand__card-footer-rate-wrapper"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="9px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#half-star"
+                        ></use>
+                      </svg>
+                    </div>
+                    <span class="card-text"
+                      >4.5/<strong class="accent-color">5</strong></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-price">
+                    <span class="card-title"
+                      >₽<span class="price">5000</span></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-wrapper">
+                    <button class="brand__cards-btn--buy" type="button">
+                      <svg class="brand__cards-btn--svg" aria-hidden="true">
+                        <use
+                          class="brand__cards-btn--icon"
+                          href="./icons/sprite.svg#card"
+                        ></use>
+                      </svg>
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="brand__cards" data-id="2">
+              <div class="brand__cards-wrapper">
+                <div class="brand__cards-header">
+                  <img
+                    class="brand__cards-img"
+                    src="./img/brand__card-img2.png"
+                    alt="Узкие джинсы"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="brand__cards-footer">
+                  <h3 class="brand__cards-footer-title card-title">
+                    Узкие джинсы
+                  </h3>
+                  <div class="brand__cards-footer-rate">
+                    <div
+                      class="brand__card-footer-rate-wrapper"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="9px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#half-star"
+                        ></use>
+                      </svg>
+                    </div>
+                    <span class="card-text"
+                      >3.5/<strong class="accent-color">5</strong></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-price">
+                    <span class="card-title"
+                      >₽<span class="price">5000</span></span
+                    >
+                    <span class="card-title--marker">₽6000</span>
+                    <span class="card-title--sale">-20%</span>
+                  </div>
+                  <div class="brand__cards-footer-wrapper">
+                    <button class="brand__cards-btn--buy" type="button">
+                      <svg class="brand__cards-btn--svg" aria-hidden="true">
+                        <use
+                          class="brand__cards-btn--icon"
+                          href="./icons/sprite.svg#card"
+                        ></use>
+                      </svg>
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="brand__cards" data-id="3">
+              <div class="brand__cards-wrapper">
+                <div class="brand__cards-header">
+                  <img
+                    class="brand__cards-img"
+                    src="./img/brand__card-img3.png"
+                    alt="Клетчатая рубашка"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="brand__cards-footer">
+                  <h3 class="brand__cards-footer-title card-title">
+                    Клетчатая рубашка
+                  </h3>
+                  <div class="brand__cards-footer-rate">
+                    <div
+                      class="brand__card-footer-rate-wrapper"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="9px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#half-star"
+                        ></use>
+                      </svg>
+                    </div>
+                    <span class="card-text"
+                      >4.5/<strong class="accent-color">5</strong></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-price">
+                    <span class="card-title"
+                      >₽<span class="price">7000</span></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-wrapper">
+                    <button class="brand__cards-btn--buy" type="button">
+                      <svg class="brand__cards-btn--svg" aria-hidden="true">
+                        <use
+                          class="brand__cards-btn--icon"
+                          href="./icons/sprite.svg#card"
+                        ></use>
+                      </svg>
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="brand__cards" data-id="4">
+              <div class="brand__cards-wrapper">
+                <div class="brand__cards-header">
+                  <img
+                    class="brand__cards-img"
+                    src="./img/brand__card-img4.png"
+                    alt="Футболка с полосами"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="brand__cards-footer">
+                  <h3 class="brand__cards-footer-title card-title">
+                    Футболка с полосами
+                  </h3>
+                  <div class="brand__cards-footer-rate">
+                    <div
+                      class="brand__card-footer-rate-wrapper"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="9px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#half-star"
+                        ></use>
+                      </svg>
+                    </div>
+                    <span class="card-text"
+                      >4.5/<strong class="accent-color">5</strong></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-price">
+                    <span class="card-title"
+                      >₽<span class="price">6000</span></span
+                    >
+                    <span class="card-title--marker">₽8000</span>
+                    <span class="card-title--sale">-30%</span>
+                  </div>
+                  <div class="brand__cards-footer-wrapper">
+                    <button class="brand__cards-btn--buy" type="button">
+                      <svg class="brand__cards-btn--svg" aria-hidden="true">
+                        <use
+                          class="brand__cards-btn--icon"
+                          href="./icons/sprite.svg#card"
+                        ></use>
+                      </svg>
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="brand__wrapper brand__wrapper-extra brand__wrapper--close"
+          >
+            <div class="brand__cards" data-id="5">
+              <div class="brand__cards-wrapper">
+                <div class="brand__cards-header">
+                  <img
+                    class="brand__cards-img"
+                    src="./img/brand__card-img9.png"
+                    alt="Пуховый жилет"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="brand__cards-footer">
+                  <h3 class="brand__cards-footer-title card-title">
+                    Пуховый жилет
+                  </h3>
+                  <div class="brand__cards-footer-rate">
+                    <div
+                      class="brand__card-footer-rate-wrapper"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="9px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#half-star"
+                        ></use>
+                      </svg>
+                    </div>
+                    <span class="card-text"
+                      >4.5/<strong class="accent-color">5</strong></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-price">
+                    <span class="card-title"
+                      >₽<span class="price">5000</span></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-wrapper">
+                    <button class="brand__cards-btn--buy" type="button">
+                      <svg class="brand__cards-btn--svg" aria-hidden="true">
+                        <use
+                          class="brand__cards-btn--icon"
+                          href="./icons/sprite.svg#card"
+                        ></use>
+                      </svg>
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="brand__cards" data-id="6">
+              <div class="brand__cards-wrapper">
+                <div class="brand__cards-header">
+                  <img
+                    class="brand__cards-img"
+                    src="./img/brand__card-img10.png"
+                    alt="Фланелевая рубашка в клетку"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="brand__cards-footer">
+                  <h3 class="brand__cards-footer-title card-title">
+                    Фланелевая рубашка
+                  </h3>
+                  <div class="brand__cards-footer-rate">
+                    <div
+                      class="brand__card-footer-rate-wrapper"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="9px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#half-star"
+                        ></use>
+                      </svg>
+                    </div>
+                    <span class="card-text"
+                      >3.5/<strong class="accent-color">5</strong></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-price">
+                    <span class="card-title"
+                      >₽<span class="price">5000</span></span
+                    >
+                    <span class="card-title--marker">₽6000</span>
+                    <span class="card-title--sale">-20%</span>
+                  </div>
+                  <div class="brand__cards-footer-wrapper">
+                    <button class="brand__cards-btn--buy" type="button">
+                      <svg class="brand__cards-btn--svg" aria-hidden="true">
+                        <use
+                          class="brand__cards-btn--icon"
+                          href="./icons/sprite.svg#card"
+                        ></use>
+                      </svg>
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="brand__cards" data-id="7">
+              <div class="brand__cards-wrapper">
+                <div class="brand__cards-header">
+                  <img
+                    class="brand__cards-img"
+                    src="./img/brand__card-img11.png"
+                    alt="Спортивные джоггеры"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="brand__cards-footer">
+                  <h3 class="brand__cards-footer-title card-title">
+                    Спортивные джоггеры
+                  </h3>
+                  <div class="brand__cards-footer-rate">
+                    <div
+                      class="brand__card-footer-rate-wrapper"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="9px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#half-star"
+                        ></use>
+                      </svg>
+                    </div>
+                    <span class="card-text"
+                      >4.5/<strong class="accent-color">5</strong></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-price">
+                    <span class="card-title"
+                      >₽<span class="price">7000</span></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-wrapper">
+                    <button class="brand__cards-btn--buy" type="button">
+                      <svg class="brand__cards-btn--svg" aria-hidden="true">
+                        <use
+                          class="brand__cards-btn--icon"
+                          href="./icons/sprite.svg#card"
+                        ></use>
+                      </svg>
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="brand__cards" data-id="8">
+              <div class="brand__cards-wrapper">
+                <div class="brand__cards-header">
+                  <img
+                    class="brand__cards-img"
+                    src="./img/brand__card-img12.png"
+                    alt="Вязаный свитер"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="brand__cards-footer">
+                  <h3 class="brand__cards-footer-title card-title">
+                    Вязаный свитер
+                  </h3>
+                  <div class="brand__cards-footer-rate">
+                    <div
+                      class="brand__card-footer-rate-wrapper"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="9px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#half-star"
+                        ></use>
+                      </svg>
+                    </div>
+                    <span class="card-text"
+                      >4.5/<strong class="accent-color">5</strong></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-price">
+                    <span class="card-title"
+                      >₽<span class="price">6000</span></span
+                    >
+                    <span class="card-title--marker">₽8000</span>
+                    <span class="card-title--sale">-30%</span>
+                  </div>
+                  <div class="brand__cards-footer-wrapper">
+                    <button class="brand__cards-btn--buy" type="button">
+                      <svg class="brand__cards-btn--svg" aria-hidden="true">
+                        <use
+                          class="brand__cards-btn--icon"
+                          href="./icons/sprite.svg#card"
+                        ></use>
+                      </svg>
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="brand__btn-container">
+            <button class="brand__btn-add" type="button">Посмотреть всё</button>
+          </div>
+        </div>
+      </section>
+      <section class="brand" id="best-sellers">
+        <div class="container">
+          <h2 class="brand__title">ЛИДЕРЫ ПРОДАЖ</h2>
+          <div class="brand__wrapper">
+            <div class="brand__cards" data-id="9">
+              <div class="brand__cards-wrapper">
+                <div class="brand__cards-header">
+                  <img
+                    class="brand__cards-img"
+                    src="./img/brand__card-img5.png"
+                    alt="Рубашка в полоску"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="brand__cards-footer">
+                  <h3 class="brand__cards-footer-title card-title">
+                    Рубашка в полоску
+                  </h3>
+                  <div class="brand__cards-footer-rate">
+                    <div
+                      class="brand__card-footer-rate-wrapper"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                    </div>
+
+                    <span class="card-text"
+                      >5/<strong class="accent-color">5.0</strong></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-price">
+                    <span class="card-title"
+                      >₽<span class="price">5000</span></span
+                    >
+                    <span class="card-title--marker">₽6000</span>
+                    <span class="card-title--sale">-20%</span>
+                  </div>
+                  <div class="brand__cards-footer-wrapper">
+                    <button class="brand__cards-btn--buy" type="button">
+                      <svg class="brand__cards-btn--svg" aria-hidden="true">
+                        <use
+                          class="brand__cards-btn--icon"
+                          href="./icons/sprite.svg#card"
+                        ></use>
+                      </svg>
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="brand__cards" data-id="10">
+              <div class="brand__cards-wrapper">
+                <div class="brand__cards-header">
+                  <img
+                    class="brand__cards-img"
+                    src="./img/brand__card-img6.png"
+                    alt="Футболка «Courage»"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="brand__cards-footer">
+                  <h3 class="brand__cards-footer-title card-title">
+                    Футболка «Courage»
+                  </h3>
+                  <div class="brand__cards-footer-rate">
+                    <div
+                      class="brand__card-footer-rate-wrapper"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                    </div>
+
+                    <span class="card-text"
+                      >4.0/<strong class="accent-color">5</strong></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-price">
+                    <span class="card-title"
+                      >₽<span class="price">5000</span></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-wrapper">
+                    <button class="brand__cards-btn--buy" type="button">
+                      <svg class="brand__cards-btn--svg" aria-hidden="true">
+                        <use
+                          class="brand__cards-btn--icon"
+                          href="./icons/sprite.svg#card"
+                        ></use>
+                      </svg>
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="brand__cards" data-id="11">
+              <div class="brand__cards-wrapper">
+                <div class="brand__cards-header">
+                  <img
+                    class="brand__cards-img"
+                    src="./img/brand__card-img7.png"
+                    alt="Свободные бермуды"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="brand__cards-footer">
+                  <h3 class="brand__cards-footer-title card-title">
+                    Свободные бермуды
+                  </h3>
+                  <div class="brand__cards-footer-rate">
+                    <div
+                      class="brand__card-footer-rate-wrapper"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                    </div>
+
+                    <span class="card-text"
+                      >3.0/<strong class="accent-color">5</strong></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-price">
+                    <span class="card-title"
+                      >₽<span class="price">4000</span></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-wrapper">
+                    <button class="brand__cards-btn--buy" type="button">
+                      <svg class="brand__cards-btn--svg" aria-hidden="true">
+                        <use
+                          class="brand__cards-btn--icon"
+                          href="./icons/sprite.svg#card"
+                        ></use>
+                      </svg>
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="brand__cards" data-id="12">
+              <div class="brand__cards-wrapper">
+                <div class="brand__cards-header">
+                  <img
+                    class="brand__cards-img"
+                    src="./img/brand__card-img8.png"
+                    alt="Потертые узкие джинсы"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="brand__cards-footer">
+                  <h3 class="brand__cards-footer-title card-title">
+                    Потертые узкие джинсы
+                  </h3>
+                  <div class="brand__cards-footer-rate">
+                    <div
+                      class="brand__card-footer-rate-wrapper"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="9px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#half-star"
+                        ></use>
+                      </svg>
+                    </div>
+                    <span class="card-text"
+                      >4.5/<strong class="accent-color">5</strong></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-price">
+                    <span class="card-title"
+                      >₽<span class="price">7000</span></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-wrapper">
+                    <button class="brand__cards-btn--buy" type="button">
+                      <svg class="brand__cards-btn--svg" aria-hidden="true">
+                        <use
+                          class="brand__cards-btn--icon"
+                          href="./icons/sprite.svg#card"
+                        ></use>
+                      </svg>
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="brand__wrapper brand__wrapper-extra brand__wrapper--close brand__wrapper-extra--second"
+          >
+            <div class="brand__cards" data-id="13">
+              <div class="brand__cards-wrapper">
+                <div class="brand__cards-header">
+                  <img
+                    class="brand__cards-img"
+                    src="./img/brand__card-img13.png"
+                    alt="Белая футболка с принтом"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="brand__cards-footer">
+                  <h3 class="brand__cards-footer-title card-title">
+                    Белая футболка с принтом
+                  </h3>
+                  <div class="brand__cards-footer-rate">
+                    <div
+                      class="brand__card-footer-rate-wrapper"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                    </div>
+
+                    <span class="card-text"
+                      >5/<strong class="accent-color">5.0</strong></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-price">
+                    <span class="card-title"
+                      >₽<span class="price">5000</span></span
+                    >
+                    <span class="card-title--marker">₽6000</span>
+                    <span class="card-title--sale">-20%</span>
+                  </div>
+                  <div class="brand__cards-footer-wrapper">
+                    <button class="brand__cards-btn--buy" type="button">
+                      <svg class="brand__cards-btn--svg" aria-hidden="true">
+                        <use
+                          class="brand__cards-btn--icon"
+                          href="./icons/sprite.svg#card"
+                        ></use>
+                      </svg>
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="brand__cards" data-id="14">
+              <div class="brand__cards-wrapper">
+                <div class="brand__cards-header">
+                  <img
+                    class="brand__cards-img"
+                    src="./img/brand__card-img14.png"
+                    alt="Бомбер бежевый"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="brand__cards-footer">
+                  <h3 class="brand__cards-footer-title card-title">Бомбер</h3>
+                  <div class="brand__cards-footer-rate">
+                    <div
+                      class="brand__card-footer-rate-wrapper"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                    </div>
+
+                    <span class="card-text"
+                      >4.0/<strong class="accent-color">5</strong></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-price">
+                    <span class="card-title"
+                      >₽<span class="price">5000</span></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-wrapper">
+                    <button class="brand__cards-btn--buy" type="button">
+                      <svg class="brand__cards-btn--svg" aria-hidden="true">
+                        <use
+                          class="brand__cards-btn--icon"
+                          href="./icons/sprite.svg#card"
+                        ></use>
+                      </svg>
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="brand__cards" data-id="15">
+              <div class="brand__cards-wrapper">
+                <div class="brand__cards-header">
+                  <img
+                    class="brand__cards-img"
+                    src="./img/brand__card-img15.png"
+                    alt="Худи с капюшоном"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="brand__cards-footer">
+                  <h3 class="brand__cards-footer-title card-title">Худи</h3>
+                  <div class="brand__cards-footer-rate">
+                    <div
+                      class="brand__card-footer-rate-wrapper"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                    </div>
+
+                    <span class="card-text"
+                      >3.0/<strong class="accent-color">5</strong></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-price">
+                    <span class="card-title"
+                      >₽<span class="price">4000</span></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-wrapper">
+                    <button class="brand__cards-btn--buy" type="button">
+                      <svg class="brand__cards-btn--svg" aria-hidden="true">
+                        <use
+                          class="brand__cards-btn--icon"
+                          href="./icons/sprite.svg#card"
+                        ></use>
+                      </svg>
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="brand__cards" data-id="16">
+              <div class="brand__cards-wrapper">
+                <div class="brand__cards-header">
+                  <img
+                    class="brand__cards-img"
+                    src="./img/brand__card-img16.png"
+                    alt="Прямые джинсы"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="brand__cards-footer">
+                  <h3 class="brand__cards-footer-title card-title">
+                    Прямые джинсы
+                  </h3>
+                  <div class="brand__cards-footer-rate">
+                    <div
+                      class="brand__card-footer-rate-wrapper"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="19px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#full-star"
+                        ></use>
+                      </svg>
+                      <svg
+                        width="9px"
+                        height="19px"
+                        class="brand__cards-footer-rate-star"
+                      >
+                        <use
+                          class="brand__cards-footer-image"
+                          href="./icons/stars-mark.svg#half-star"
+                        ></use>
+                      </svg>
+                    </div>
+                    <span class="card-text"
+                      >4.5/<strong class="accent-color">5</strong></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-price">
+                    <span class="card-title"
+                      >₽<span class="price">7000</span></span
+                    >
+                  </div>
+                  <div class="brand__cards-footer-wrapper">
+                    <button class="brand__cards-btn--buy" type="button">
+                      <svg class="brand__cards-btn--svg" aria-hidden="true">
+                        <use
+                          class="brand__cards-btn--icon"
+                          href="./icons/sprite.svg#card"
+                        ></use>
+                      </svg>
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="brand__btn-container">
+            <button class="brand__btn-add brand__btn-add--second" type="button">
+              Посмотреть всё
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="choice" id="dress-style">
+        <div class="container choice__wrapper">
+          <div class="choice__wrapper-text">
+            <h2 class="brand__title">ВЫБЕРИ СВОЙ СТИЛЬ</h2>
+          </div>
+          <div class="choice__card-wrapper">
+            <div class="choice__card-item choice__card-item--casual">
+              <h3 class="choice__card-title">Свободный</h3>
+            </div>
+            <div class="choice__card-item choice__card-item--formal">
+              <h3 class="choice__card-title">Формальный</h3>
+            </div>
+            <div class="choice__card-item choice__card-item--party">
+              <h3 class="choice__card-title">Вечерний</h3>
+            </div>
+            <div class="choice__card-item choice__card-item--gym">
+              <h3 class="choice__card-title">Спорт</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper">
+          <div class="container reviews__container-text">
+            <h2 class="brand__title reviews__container-title">
+              ЧТО О НАС ГОВОРЯТ
+            </h2>
+            <div class="reviews__container-rows">
+              <button
+                class="reviews__slider-btn reviews__slider-btn--prev"
+                type="button"
+                aria-label="Предыдущий отзыв"
+                title="Предыдущий отзыв"
+              >
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./icons/rows.svg#right-row"></use>
+                </svg>
+              </button>
+              <button
+                class="reviews__slider-btn reviews__slider-btn--next"
+                type="button"
+                aria-label="Следующий отзыв"
+                title="Следующий отзыв"
+              >
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./icons/rows.svg#left-row"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="swiper reviews__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper__slid--wrapper">
+                  <div class="swiper__slid--rate" aria-hidden="true">
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                  </div>
+                  <p class="swiper__slid--text">Виталий У.</p>
+                  <p class="swiper__slid--description">
+                    «Я в восторге от качества и стиля одежды, которую получил от
+                    Shop.co. От повседневных вещей до элегантных платьев —
+                    каждая покупка превзошла мои ожидания.»
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__slid--wrapper">
+                  <div class="swiper__slid--rate" aria-hidden="true">
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                  </div>
+                  <p class="swiper__slid--text">Даниил В.</p>
+                  <p class="swiper__slid--description">
+                    «Раньше было трудно найти одежду под мой стиль, пока я не
+                    открыл Shop.co. Их ассортимент впечатляет и подходит для
+                    разных вкусов и случаев. Мне очень понравилось»
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__slid--wrapper">
+                  <div class="swiper__slid--rate" aria-hidden="true">
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                  </div>
+                  <p class="swiper__slid--text">Альберт Б.</p>
+                  <p class="swiper__slid--description">
+                    «Я всегда ищу уникальные модные вещи и был рад открыть для
+                    себя Shop.co. Их выбор одежды очень разнообразен и полностью
+                    соответствует последним модным трендам.»
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__slid--wrapper">
+                  <div class="swiper__slid--rate" aria-hidden="true">
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                  </div>
+                  <p class="swiper__slid--text">Виталий У.</p>
+                  <p class="swiper__slid--description">
+                    «Я в восторге от качества и стиля одежды, которую получил от
+                    Shop.co. От повседневных вещей до элегантных платьев —
+                    каждая покупка превзошла мои ожидания.»
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__slid--wrapper">
+                  <div class="swiper__slid--rate" aria-hidden="true">
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                  </div>
+                  <p class="swiper__slid--text">Даниил В.</p>
+                  <p class="swiper__slid--description">
+                    «Раньше было трудно найти одежду под мой стиль, пока я не
+                    открыл Shop.co. Их ассортимент впечатляет и подходит для
+                    разных вкусов и случаев. Мне очень понравилось»
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__slid--wrapper">
+                  <div class="swiper__slid--rate" aria-hidden="true">
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                  </div>
+                  <p class="swiper__slid--text">Альберт Б.</p>
+                  <p class="swiper__slid--description">
+                    «Я всегда ищу уникальные модные вещи и был рад открыть для
+                    себя Shop.co. Их выбор одежды очень разнообразен и полностью
+                    соответствует последним модным трендам.»
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__slid--wrapper">
+                  <div class="swiper__slid--rate" aria-hidden="true">
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                  </div>
+                  <p class="swiper__slid--text">Даниил В.</p>
+                  <p class="swiper__slid--description">
+                    «Раньше было трудно найти одежду под мой стиль, пока я не
+                    открыл Shop.co. Их ассортимент впечатляет и подходит для
+                    разных вкусов и случаев. Мне очень понравилось»
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__slid--wrapper">
+                  <div class="swiper__slid--rate" aria-hidden="true">
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                    <svg
+                      width="19px"
+                      height="19px"
+                      class="brand__cards-footer-rate-star"
+                    >
+                      <use
+                        class="brand__cards-footer-image"
+                        href="./icons/stars-mark.svg#full-star"
+                      ></use>
+                    </svg>
+                  </div>
+                  <p class="swiper__slid--text">Альберт Б.</p>
+                  <p class="swiper__slid--description">
+                    «Я всегда ищу уникальные модные вещи и был рад открыть для
+                    себя Shop.co. Их выбор одежды очень разнообразен и полностью
+                    соответствует последним модным трендам.»
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="submission-form">
+        <div class="container submission-form__wrapper">
+          <h2 class="submission-form__title">
+            БУДЬТЕ В КУРСЕ ВСЕХ ПОСЛЕДНИХ НОВОСТЕЙ
+          </h2>
+          <form class="submission-form__container-form">
+            <div class="submission-form__container-form-cont">
+              <label
+                ><input
+                  class="submission-form__input"
+                  type="email"
+                  name="email"
+                  placeholder="Ваша почта"
+                  aria-label="Ваша почта"
+                  required
+              /></label>
+            </div>
+            <button class="submission-form__btn" type="submit">
+              Подписаться на рассылку
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__top-chapter">
+            <a class="footer__top-chapter-name" href="#hero">SHOP.CO</a>
+            <p class="footer__top-chapter-text">
+              У нас есть одежда, что подходит вашему стилю и которой можно
+              гордиться. Для женщин и мужчин.
+            </p>
+            <div class="footer__top-chapter-links">
+              <a
+                class="footer__top-chapter-link"
+                href="#"
+                aria-label="Twitter"
+                title="Twitter"
+                ><svg width="25" height="25" aria-hidden="true">
+                  <use href="./icons/links.svg#twitter"></use>
+                </svg>
+              </a>
+              <a
+                class="footer__top-chapter-link"
+                href="#"
+                aria-label="Facebook"
+                title="Facebook"
+                ><svg width="25" height="25" aria-hidden="true">
+                  <use href="./icons/links.svg#facebook"></use>
+                </svg>
+              </a>
+              <a
+                class="footer__top-chapter-link"
+                href="#"
+                aria-label="Instagram"
+                title="Instagram"
+                ><svg width="25" height="25" aria-hidden="true">
+                  <use href="./icons/links.svg#insta"></use>
+                </svg>
+              </a>
+              <a
+                class="footer__top-chapter-link"
+                href="#"
+                aria-label="GitHub"
+                title="GitHub"
+                ><svg width="25" height="25" aria-hidden="true">
+                  <use href="./icons/links.svg#git"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__top-wrapper-container">
+            <div class="footer__top-chapter">
+              <h4 class="footer__top-chapter-title">Компания</h4>
+              <ul class="footer__top-chapter-list">
+                <li class="footer__top-chapter-item"><a href="#">О нас</a></li>
+                <li class="footer__top-chapter-item">
+                  <a href="#">Функции</a>
+                </li>
+                <li class="footer__top-chapter-item"><a href="#">Работы</a></li>
+                <li class="footer__top-chapter-item">
+                  <a href="#">Карьера</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__top-chapter">
+              <h4 class="footer__top-chapter-title">Помощь</h4>
+              <ul class="footer__top-chapter-list">
+                <li class="footer__top-chapter-item">
+                  <a href="#">Поддержка</a>
+                </li>
+                <li class="footer__top-chapter-item">
+                  <a href="#">Доставка</a>
+                </li>
+                <li class="footer__top-chapter-item">
+                  <a href="#">Условия</a>
+                </li>
+                <li class="footer__top-chapter-item">
+                  <a href="#">Политика</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__top-chapter">
+              <h4 class="footer__top-chapter-title">Вопросы</h4>
+              <ul class="footer__top-chapter-list">
+                <li class="footer__top-chapter-item">
+                  <a href="#">Аккаунт</a>
+                </li>
+                <li class="footer__top-chapter-item">
+                  <a href="#">О доставке</a>
+                </li>
+                <li class="footer__top-chapter-item"><a href="#">Заказы</a></li>
+                <li class="footer__top-chapter-item">
+                  <a href="#">Платежи</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__top-chapter">
+              <h4 class="footer__top-chapter-title">Ресурсы</h4>
+              <ul class="footer__top-chapter-list">
+                <li class="footer__top-chapter-item">
+                  <a href="#">Бесплатные книги</a>
+                </li>
+                <li class="footer__top-chapter-item"><a href="#">Уроки</a></li>
+                <li class="footer__top-chapter-item"><a href="#">Блог</a></li>
+                <li class="footer__top-chapter-item">
+                  <a href="#">Плейлист</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container footer__bottom-wrapper">
+            <span class="footer__bottom-title"
+              >Shop.co © 2000-2023, Все права защищены</span
+            >
+            <div class="footer__bottom-cards">
+              <img
+                class="footer__bottom-card"
+                src="./img/card__1.png"
+                alt="Visa"
+                width="46"
+                height="25"
+                loading="lazy"
+              />
+              <img
+                class="footer__bottom-card"
+                src="./img/card__2.png"
+                alt="Mastercard"
+                width="46"
+                height="25"
+                loading="lazy"
+              />
+              <img
+                class="footer__bottom-card"
+                src="./img/card__3.png"
+                alt="PayPal"
+                width="46"
+                height="25"
+                loading="lazy"
+              />
+              <img
+                class="footer__bottom-card"
+                src="./img/card__4.png"
+                alt="Apple Pay"
+                width="46"
+                height="25"
+                loading="lazy"
+              />
+              <img
+                class="footer__bottom-card"
+                src="./img/card__5.png"
+                alt="Google Pay"
+                width="46"
+                height="25"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal close">
+      <div class="modal__window">
+        <button class="modal__close" type="button" aria-label="Закрыть окно">
+          <svg class="modal__close-icon" aria-hidden="true">
+            <use class="modal__close-cross" href="./icons/cross.svg"></use>
+          </svg>
+        </button>
+        <h3 class="modal__title">Заявка на заказ</h3>
+
+        <form class="modal__wrapper-form">
+          <label
+            ><input
+              placeholder="Ваше имя"
+              class="modal__input"
+              type="text"
+              name="name"
+              aria-label="Ваше Имя"
+              required
+          /></label>
+
+          <label
+            ><input
+              placeholder="Ваш номер телефона"
+              class="modal__input"
+              type="tel"
+              inputmode="numeric"
+              name="tel"
+              aria-label="Ваша номер"
+              required
+          /></label>
+
+          <label
+            ><input
+              placeholder="Ваш Email"
+              class="modal__input"
+              type="email"
+              name="email"
+              aria-label="Ваша почта"
+              required
+          /></label>
+          <button class="modal__btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal-second close">
+      <div class="modal__window-basket">
+        <div class="modal__window-basket--wrapper modal__window-basket--full">
+          <div class="modal__window-basket--header">
+            <p class="modal__window-basket-title">КОРЗИНА</p>
+            <button
+              class="modal__window-basket--full-btn"
+              type="button"
+              aria-label="Закрыть корзину"
+            >
+              <svg class="modal__close-icon" aria-hidden="true">
+                <use class="modal__close-cross" href="./icons/cross.svg"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="modal__window-basket-main">
+            <div class="modal__window-basket--list"></div>
+            <div class="modal__window-basket--footer">
+              <div class="modal__window-basket--footer-total">
+                <span class="modal__window-basket-title modal-title"
+                  >К оплате</span
+                >
+                <span
+                  class="modal__window-card--title-accente-price modal-title"
+                  >₽4000</span
+                >
+              </div>
+              <div class="modal__window-basket--footer-buy">
+                <button class="modal__window-basket--footer-btn" type="button">
+                  ОФОРМИТЬ ЗАКАЗ
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

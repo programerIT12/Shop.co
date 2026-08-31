@@ -1,0 +1,18 @@
+/* base */
+@import "./base/normilize.css";
+@import "./base/vars.css";
+@import "./base/fonts.css";
+@import "./base/globals.css";
+
+/* blocks */
+@import "./blocks/header.css";
+@import "./blocks/menu.css";
+@import "./blocks/burger.css";
+@import "./blocks/hero.css";
+@import "./blocks/brand.css";
+@import "./blocks/choice.css";
+@import "./blocks/reviews.css";
+@import "./blocks/submission-form.css";
+@import "./blocks/footer.css";
+@import "./blocks/modal.css";
+@import "./blocks/modal-busket.css";

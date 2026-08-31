@@ -1,0 +1,145 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 105vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 10;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: inherit;
+  opacity: 1;
+  transition:
+    visibility var(--transition-time),
+    opacity var(--transition-time);
+}
+.modal__wrapper-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+.modal__window {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 10;
+  gap: 40px;
+  background-color: var(--bg-color);
+  min-width: 45%;
+  padding: 100px 50px;
+  min-height: 45%;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.modal__title {
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: clamp(1.875rem, 1.6rem + 1.1vw, 2.5rem);
+  line-height: 113%;
+  color: var(--second-color);
+}
+
+.modal__input {
+  width: 60%;
+  height: 48px;
+  padding: 12px 20px;
+  border: 1px solid var(--second-color);
+  border-radius: 62px;
+  background-color: var(--bg-color-soft);
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: var(--second-color);
+  transition: border var(--transition-time);
+}
+
+.modal__btn {
+  margin-top: 30px;
+  width: 60%;
+  height: 48px;
+  border-radius: 62px;
+  background-color: var(--second-color);
+  color: var(--main-color);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid var(--second-color);
+  transition:
+    color var(--transition-time),
+    background-color var(--transition-time);
+}
+@media (width <= 920px) {
+  .modal__btn,
+  .modal__input {
+    width: 100%;
+  }
+  .modal__window {
+    width: 60%;
+    height: 60%;
+  }
+}
+@media (width <= 720px) {
+  .modal__window {
+    width: 80%;
+  }
+}
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__close-icon {
+  height: 100%;
+}
+.modal__close-cross {
+  fill: black;
+}
+@media (any-hover: hover) {
+  .modal__btn:hover {
+    background-color: var(--bg-color-soft);
+    color: var(--second-color);
+  }
+}
+.close {
+  transition: all var(--transition-time);
+  visibility: hidden;
+  opacity: 0;
+}
+.modal__window-card--delete {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.modal__window-card--delete-btn {
+  border: 1px solid transparent;
+  background-color: var(--bg-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition:
+    border-color var(--transition-time),
+    background-color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .modal__window-card--delete-btn:hover {
+    border-color: var(--second-color);
+    background-color: var(--main-color);
+  }
+}

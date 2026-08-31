@@ -1,0 +1,174 @@
+.choice {
+  margin-bottom: clamp(3.125rem, 2.348rem + 3.31vw, 5rem);
+}
+
+.choice__card-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 1.189rem + 1.33vw, 2.25rem);
+  color: var(--second-color);
+  margin-top: clamp(1rem, 0.767rem + 0.99vw, 1.563rem);
+  margin-left: clamp(1.5rem, 1.189rem + 1.33vw, 2.25rem);
+  z-index: 1;
+  position: absolute;
+}
+.choice__wrapper-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.choice__wrapper {
+  background-color: var(--bg-color-soft);
+  padding-top: clamp(2.5rem, 1.723rem + 3.31vw, 4.375rem);
+  border-radius: 40px;
+}
+.choice__card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: clamp(1rem, 0.896rem + 0.44vw, 1.25rem);
+  padding-inline: clamp(1.5rem, 0.464rem + 4.42vw, 4rem);
+  padding-bottom: clamp(1.688rem, 0.419rem + 5.41vw, 4.75rem);
+}
+.choice__card-item--casual {
+  background: url("../../img/choice__img1.png");
+}
+.choice__card-item--formal {
+  background: url("../../img/choice__img2.png");
+}
+.choice__card-item--party {
+  background: url("../../img/choice__img3.png");
+}
+.choice__card-item--gym {
+  background: url("../../img/choice__img4.png");
+}
+.choice__card-item {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  width: 100%;
+  overflow: hidden;
+  transition: transform var(--transition-time);
+}
+@media (any-hover: hover) {
+  .choice__card-item:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+}
+
+@media (width > 967px) {
+  .choice__card-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+  .choice__card-item--casual {
+    grid-column: 1 / 2;
+  }
+  .choice__card-item--formal {
+    grid-column: 2 / 4;
+  }
+  .choice__card-item--party {
+    grid-column: 1 / 3;
+  }
+  .choice__card-item--gym {
+    grid-column: 3 / 4;
+  }
+  .choice__card-item {
+    height: 289px;
+  }
+}
+@media (width <= 967px) {
+  .choice__card-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+  .choice__card-item--casual {
+    grid-column: 1 / 3;
+  }
+  .choice__card-item--formal {
+    grid-column: 3 / 5;
+  }
+  .choice__card-item--party {
+    grid-column: 1 / 3;
+  }
+  .choice__card-item--gym {
+    grid-column: 3 / 5;
+  }
+  .choice__card-item {
+    height: 190px;
+  }
+}
+
+@media (width <= 676px) {
+  .choice__card-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
+  .choice__card-item--casual {
+    grid-column: 1;
+  }
+  .choice__card-item--casual:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../../img/choice__img1.png");
+    filter: blur(2px);
+    background-size: cover;
+    border-radius: 20px;
+    transform: scale(1.05);
+  }
+  .choice__card-item--formal {
+    grid-column: 1;
+  }
+  .choice__card-item--formal:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../../img/choice__img2.png");
+    filter: blur(2px);
+    background-size: cover;
+    border-radius: 20px;
+    transform: scale(1.05);
+  }
+  .choice__card-item--party {
+    grid-column: 1;
+  }
+  .choice__card-item--party:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../../img/choice__img3.png");
+    filter: blur(2px);
+    background-size: cover;
+    border-radius: 20px;
+    transform: scale(1.05);
+  }
+  .choice__card-item--gym {
+    grid-column: 1;
+  }
+  .choice__card-item--gym:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../../img/choice__img4.png");
+    filter: blur(2px);
+    background-size: cover;
+    border-radius: 20px;
+    transform: scale(1.05);
+  }
+  .choice__card-item {
+    height: 190px;
+  }
+
+  .choice .brand__title {
+    max-width: 250px;
+  }
+}
